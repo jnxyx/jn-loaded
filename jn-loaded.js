@@ -19,8 +19,8 @@ function jnLoaded(config) {
         img.onload = function() {
             pcs--
             'function' === typeof(args.process) && args.process.call(null, {
-                pcs: pcs + '/' + resLen,
-                pct: 100 * pcs / resLen + '%'
+                pcs: (resLen - pcs) + '/' + resLen,
+                pct: (100 * (resLen - pcs) / resLen).toFixed(2) + '%'
             })
             pcs === 0 && 'function' === typeof(args.complete) && args.complete()
         }

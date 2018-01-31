@@ -1,7 +1,7 @@
 {
   "name": "jn-loaded",
   "description": "images loaded plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "jnxyx",
   "main": "jn-loaded.js"
 }
