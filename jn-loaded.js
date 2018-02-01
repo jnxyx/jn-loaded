@@ -27,6 +27,6 @@ function jnLoaded(config) {
     })
 }
 
-if (module && module.exports) {
+if ('object' === typeof module && module.exports) {
     module.exports = jnLoaded
 }
